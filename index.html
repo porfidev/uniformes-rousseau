@@ -1,113 +1,101 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='es' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Rousseau - el uniforme que se adapta a su empresa</title>
-<link href="estilos.css" rel="stylesheet" type="text/css" />
-<link href="nivo-slider/nivo-slider.css" rel="stylesheet" type="text/css" media="screen" />
-<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css" >
-<link href="http://fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-17648037-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script type="text/javascript" src="jquery-1.5.min.js"></script>
-<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-
-<!-- Centering className both horizontally and vertically with jQuery: -->
-<script type="text/javascript">
-$(document).ready(function(){
-						   
-	$(window).resize(function(){
-
-		$('.centrado').css({
-			position:'absolute',
-			left: ($(window).width() - $('.centrado').outerWidth())/2,
-			top: ($(window).height() - $('.centrado').outerHeight())/2
-		});
-		
-	});
-	// To initially run the function:
-	$(window).resize();
-
-});
-
-$(window).load(function() {
-    $('#slider').nivoSlider({
-        effect:'fold', //Specify sets like: 'fold,fade,sliceDown'
-        animSpeed:800, //Slide transition speed
-        pauseTime:8000,
-        startSlide:0, //Set starting Slide (0 index)
-        directionNav:false, //Next & Prev
-        directionNavHide:false, //Only show on hover
-        controlNav:false, //1,2,3...
-        controlNavThumbs:false, //Use thumbnails for Control Nav
-        controlNavThumbsFromRel:false, //Use image rel for thumbs
-        controlNavThumbsSearch: '.jpg', //Replace this with...
-        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
-        keyboardNav:false, //Use left & right arrows
-        pauseOnHover:true, //Stop animation while hovering
-        manualAdvance:false, //Force manual transitions
-        captionOpacity:0.8, //Universal caption opacity
-        beforeChange: function(){},
-        afterChange: function(){},
-        slideshowEnd: function(){}, //Triggers after all slides have been shown
-        lastSlide: function(){}, //Triggers when last slide is shown
-        afterLoad: function(){} //Triggers when slider has loaded
-    });
-});
-
-$(document).ready(function(){
-   $("#menu a").each(function(){
-      var href = $(this).attr("href");
-      $(this).click(function(){         
-         $("#contenedor").hide().load(href).fadeIn("slow"); //Le damos efecto
-         $(this).attr({ href: "#"});
-      });
-   });
-   var href = "uniformes.html";
-   $("#contenedor").hide().load(href).fadeIn("slow"); //Le damos efecto
-   $(this).attr({ href: "#"});
-});
-
-</script>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <title>Rousseau - el uniforme que se adapta a su empresa</title>
+  <link href='styles/estilos.css' rel='stylesheet' type='text/css' />
+  <link href='libs/nivo-slider/nivo-slider.css' media='screen' rel='stylesheet' type='text/css' />
+  <link href='libs/fancybox/jquery.fancybox-1.3.4.css' media='screen' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie:regular' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic' rel='stylesheet'
+        type='text/css'>
 </head>
 
 <body>
-<div class="centrado">
-  <div id="logo"><img src="imagenes/logo.png" alt="Rousseau" width="325" height="87" /></div>
-  <div id="contenido">
-    <div id="menu">
-        <ul>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="uniformes.html">Uniformes</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+<div class='centrado'>
+  <div id='logo'><img alt='Rousseau' height='87' src='imagenes/logo.png' width='325' /></div>
+  <div id='contenido'>
+    <div id='menu'>
+      <ul>
+        <li><a href='pages/nosotros.html'>Nosotros</a></li>
+        <li><a href='pages/uniformes.html'>Uniformes</a></li>
+        <li><a href='pages/contacto.html'>Contacto</a></li>
+      </ul>
     </div>
-    <div id="contenedor"></div>
-    <div id="animacion">
-      <div id="slider">
-      <img src="imagenes/chef/c2.jpg" alt="" />
-      <img src="imagenes/chef/c4.jpg" alt="" />
-      <img src="imagenes/chef/c1.jpg" alt="" />
-      <img src="imagenes/chef/c3.jpg" alt="" />
+    <div id='contenedor'></div>
+    <div id='animacion'>
+      <div id='slider'>
+        <img alt='' src='imagenes/chef/c2.jpg' />
+        <img alt='' src='imagenes/chef/c4.jpg' />
+        <img alt='' src='imagenes/chef/c1.jpg' />
+        <img alt='' src='imagenes/chef/c3.jpg' />
       </div>
     </div>
+  </div>
+  <div id='footer'>Uniformes Rousseau &copy; Derechos Reservados 2011 <em>v1.2</em> // diseño <strong><a
+    href='https://porfi.dev'>porfi.dev</a></strong></div>
 </div>
-<div id="footer">Uniformes Rousseau &copy; Derechos Reservados 2011 <em>v1.2</em> // diseño <strong><a href="http://www.porfirio.mx">porfirio.mx</a></strong></div>
-</div>
-</div>
+<script src='libs/jquery-1.5.min.js' type='text/javascript'></script>
+<script src='libs/nivo-slider/jquery.nivo.slider.pack.js' type='text/javascript'></script>
+<script src='libs/fancybox/jquery.fancybox-1.3.4.pack.js' type='text/javascript'></script>
+<script src='libs/fancybox/jquery.mousewheel-3.0.4.pack.js' type='text/javascript'></script>
+
+<!-- Centering className both horizontally and vertically with jQuery: -->
+<script type='text/javascript'>
+  function init() {
+    const initPage = 'pages/uniformes.html';
+    // To initially run the function:
+    $(window).resize();
+    $('#contenedor').hide().load(initPage).fadeIn('slow'); //Le damos efecto
+    $(this).attr({ href: '#' });
+  }
+
+  $(document).ready(function() {
+    const centradoContainer = $('.centrado');
+    $(window).resize(function() {
+      centradoContainer.css({
+        position: 'absolute',
+        left: ($(window).width() - centradoContainer.outerWidth()) / 2,
+        top: ($(window).height() - centradoContainer.outerHeight()) / 2,
+      });
+    });
+
+    // Init SLIDER
+    $('#slider').nivoSlider({
+      effect: 'fold', //Specify sets like: 'fold,fade,sliceDown'
+      animSpeed: 800, //Slide transition speed
+      pauseTime: 8000,
+      startSlide: 0, //Set starting Slide (0 index)
+      directionNav: false, // Next - Prev
+      directionNavHide: false, //Only show on hover
+      controlNav: false, //1,2,3...
+      controlNavThumbs: false, //Use thumbnails for Control Nav
+      controlNavThumbsFromRel: false, //Use image rel for thumbs
+      controlNavThumbsSearch: '.jpg', //Replace this with...
+      controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+      keyboardNav: false, //Use left - right arrows
+      pauseOnHover: true, //Stop animation while hovering
+      manualAdvance: false, //Force manual transitions
+      captionOpacity: 0.8, //Universal caption opacity
+      beforeChange: function() {},
+      afterChange: function() {},
+      slideshowEnd: function() {}, //Triggers after all slides have been shown
+      lastSlide: function() {}, //Triggers when last slide is shown
+      afterLoad: function() {}, //Triggers when slider has loaded
+    });
+
+    // Init menu listener changer
+    $('#menu a').each(function() {
+      const href = $(this).attr('href');
+      $(this).click(function() {
+        $('#contenedor').hide().load(href).fadeIn('slow'); //Le damos efecto
+        $(this).attr({ href: '#' });
+      });
+    });
+
+    init();
+  });
+</script>
 </body>
 </html>
