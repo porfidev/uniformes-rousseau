@@ -1,0 +1,34 @@
+{
+  "name": "uniformes-rousseau",
+  "version": "1.0.0",
+  "description": "Sitio web desarrollado para cliente Uniformes Rousseau en 2011",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porfidev/uniformes-rousseau.git"
+  },
+  "keywords": [
+    "web",
+    "site",
+    "plain",
+    "jquery",
+    "nivo-slider",
+    "static",
+    "desarrollo",
+    "programacion"
+  ],
+  "author": "Porfirio Chávez <hola@porfi.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/porfidev/uniformes-rousseau/issues"
+  },
+  "homepage": "https://github.com/porfidev/uniformes-rousseau#readme",
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "prettier": "^2.6.2"
+  }
+}
